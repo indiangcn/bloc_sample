@@ -9,10 +9,10 @@ class ApiManager {
     var response = await Dio().get(
       key,
       options: Options(
-        headers: {
-          'Authorization': 'Bearer $token',
-        },
-      ),
+          // headers: {
+          //   'Authorization': 'Bearer $token',
+          // },
+          ),
     );
     if (response.statusCode == 200) {
       List<dynamic> responseList = response.data as List;
